@@ -65,6 +65,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'authproject.urls'
+LOGIN_URL = '/auth/login/'
+
 
 TEMPLATES = [
     {
