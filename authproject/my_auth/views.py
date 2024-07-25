@@ -11,6 +11,9 @@ from django.urls import reverse
 from django.http import HttpResponse
 from .forms import UsernameChangeForm, CustomUserCreationForm
 
+#Home Page
+def home_view(request):
+    return render(request, 'my_auth/home.html')
 
 #This is for User Sign Up Functionality
 def signup_view(request):

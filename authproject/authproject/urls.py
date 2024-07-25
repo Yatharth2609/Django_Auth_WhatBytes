@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 from my_auth import views as auth_views
 
+#All the required Endpoints
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', auth_views.home_view, name='home'),
     path('auth/signup/', auth_views.signup_view, name='signup'),
     path('auth/login/', auth_views.login_view, name='login'),
     path('auth/logout/', auth_views.logout_view, name='logout'),
